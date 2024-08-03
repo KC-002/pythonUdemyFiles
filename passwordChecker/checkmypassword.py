@@ -12,7 +12,7 @@ def request_api_data(query_char):
 def get_pass_leaks_count(hashes, hash_to_check):
     hashes = (line.split(':') for line in hashes.text.splitlines(':'))
     for h, counts in hashes:
-        # print(h, counts)
+        #print(h, counts)
         if h == hash_to_check:
             # print(h, counts)
             return counts
